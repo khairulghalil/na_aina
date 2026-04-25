@@ -12,6 +12,8 @@ html {
 }
 body {
   overflow-x: hidden !important;
+  font-family: "Afacad", sans-serif;
+  font-size: 18px !important;
 }
 
 /*  */
@@ -76,4 +78,24 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+header .navbar {
+  background-color: #fff !important;
+  border-bottom: 1px solid #e0e0e0;
+}
+header .navbar .nav-link {
+  color: var(--primary-font-color) !important;
+  font-weight: 500;
+}
+header .navbar {
+  color: var(--primary-font-color) !important;
+  font-weight: 500;
+}
+header .navbar-toggler {
+  border: 1px solid #c7c6c6 !important;
+}
+
+.navbar-toggler i {
+  color: #b0b0b0 !important;
 }

@@ -1,0 +1,79 @@
+:root {
+  /* Declare your global colors */
+  --primary-color: #24993d;
+  --primary-font-color: #484848;
+  --secondary-font-color: #8b8a8a;
+  --accent-color: #ffca2c;
+  --bg-dark: #212529;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden !important;
+}
+
+/*  */
+.floating-btn {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background-color: #95b12f;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.floating-btn i {
+  font-size: 24px;
+  color: white;
+  line-height: 0;
+}
+
+.floating-btn:hover {
+  background-color: color-mix(in srgb, #a5c926, transparent 20%);
+  color: white;
+}
+
+.floating-btn.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*  */
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.6s ease-out;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #ffffff;
+  border-color: #95b12f transparent #fff transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1.5s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

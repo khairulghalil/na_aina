@@ -87,25 +87,14 @@ function openModal(index) {
   myModal.show();
 }
 
-// document
-//   .getElementById("productModal")
-//   .addEventListener("hidden.bs.modal", () => {
-//     mainContent.removeAttribute("inert");
-//   });
-
-// function openModal(modalId) {}
-// if (history.scrollRestoration) {
-//   history.scrollRestoration = "manual";
-// }
-
 // Remove URL hash on page load to prevent automatic scrolling
-// window.addEventListener("load", () => {
-//   if (window.location.hash) {
-//     history.replaceState(
-//       "",
-//       document.title,
-//       window.location.pathname + window.location.search,
-//     );
-//   }
-//   window.scrollTo(0, 0);
-// });
+window.addEventListener("load", () => {
+  if (window.location.hash) {
+    history.replaceState(
+      "",
+      document.title,
+      window.location.pathname + window.location.search,
+    );
+  }
+  window.scrollTo(0, 0);
+});

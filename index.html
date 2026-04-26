@@ -281,7 +281,12 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut.
                 </p>
-                <button class="btn btn-primary mt-2 px-5 fw-bold">Info</button>
+                <button
+                  class="btn btn-primary mt-2 px-5 fw-bold"
+                  onclick="openModal(0)"
+                >
+                  Info
+                </button>
               </div>
             </div>
           </div>
@@ -300,7 +305,12 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut.
                 </p>
-                <button class="btn btn-primary mt-2 px-5 fw-bold">Info</button>
+                <button
+                  class="btn btn-primary mt-2 px-5 fw-bold"
+                  onclick="openModal(1)"
+                >
+                  Info
+                </button>
               </div>
             </div>
           </div>
@@ -320,7 +330,12 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut.
                 </p>
-                <button class="btn btn-primary mt-2 px-5 fw-bold">Info</button>
+                <button
+                  class="btn btn-primary mt-2 px-5 fw-bold"
+                  onclick="openModal(2)"
+                >
+                  Info
+                </button>
               </div>
             </div>
           </div>
@@ -467,6 +482,46 @@
       <p class="m-0">&copy; 2024 Jamu Puteri Saadong. All rights reserved.</p>
       <span class="d-block">Developed By : Taming Sari Development</span>
     </footer>
+
+    <div
+      class="modal fade"
+      id="productModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn-close shadow-none"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center p-4 py-0">
+            <img
+              src="../public/img/na_aina.png"
+              class="img-fluid mb-4"
+              alt="Jamu Product"
+              id="dynamicImg"
+            />
+            <h3 id="dynamicTitle"></h3>
+            <p class="text-muted mt-3" id="dynamicDesc"></p>
+          </div>
+          <div class="modal-footer border-0 text-center m-auto">
+            <button
+              type="button"
+              class="btn btn-primary px-5"
+              data-bs-dismiss="modal"
+            >
+              Okay
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <span
       id="floating-btn"

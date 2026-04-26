@@ -331,3 +331,13 @@ footer span {
   color: var(--secondary-font-color);
   font-size: 14px;
 }
+
+/* MODAL */
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.modal h3 {
+  color: var(--primary-color) !important;
+}

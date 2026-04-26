@@ -7,6 +7,10 @@
   --bg-dark: #212529;
 }
 
+.min-vh-apple {
+  min-height: 100vh; /* Fallback */
+  min-height: 100svh;
+}
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 56px;
@@ -29,10 +33,14 @@ body {
 }
 .btn-primary:focus,
 .btn-primary:active:focus {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
 }
 .btn-primary:hover {
-  background-color: color-mix(in srgb, var(--primary-color), transparent 20%);
+  background-color: color-mix(
+    in srgb,
+    var(--primary-color),
+    transparent 20%
+  ) !important;
   color: white;
 }
 hr {

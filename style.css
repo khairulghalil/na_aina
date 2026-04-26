@@ -9,13 +9,47 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 56px;
+}
+@media (max-width: 767.98px) {
+  html {
+    scroll-padding-top: 48px;
+  }
 }
 body {
   overflow-x: hidden !important;
   font-family: "Afacad", sans-serif;
   font-size: 18px !important;
 }
-
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  font-family: "Afacad", sans-serif;
+  font-size: 18px !important;
+}
+.btn-primary:focus,
+.btn-primary:active:focus {
+  background-color: var(--primary-color);
+}
+.btn-primary:hover {
+  background-color: color-mix(in srgb, var(--primary-color), transparent 20%);
+  color: white;
+}
+hr {
+  border: 0.5px solid var(--primary-color);
+}
+.section-title h1 {
+  font-family: "Carattere", cursive;
+  color: var(--primary-color);
+  font-size: 40px;
+  text-shadow: 3px 7px 5px rgba(0, 0, 0, 0.2);
+}
+.section-title p {
+  max-width: 420px !important;
+  margin: 0 auto;
+  color: var(--secondary-font-color);
+  border: none !important;
+}
 /*  */
 .floating-btn {
   position: fixed;
@@ -24,24 +58,21 @@ body {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: #95b12f;
+  background-color: var(--primary-color);
   width: 50px;
   height: 50px;
   border-radius: 50px;
   transition: all 0.4s;
 }
-
 .floating-btn i {
   font-size: 24px;
   color: white;
   line-height: 0;
 }
-
 .floating-btn:hover {
-  background-color: color-mix(in srgb, #a5c926, transparent 20%);
+  background-color: color-mix(in srgb, var(--primary-color), transparent 20%);
   color: white;
 }
-
 .floating-btn.active {
   visibility: visible;
   opacity: 1;
@@ -56,7 +87,6 @@ body {
   background: #fff;
   transition: all 0.6s ease-out;
 }
-
 #preloader:before {
   content: "";
   position: fixed;
@@ -80,6 +110,7 @@ body {
   }
 }
 
+/* HEADER */
 header .navbar {
   background-color: #fff !important;
   border-bottom: 1px solid #e0e0e0;
@@ -87,6 +118,7 @@ header .navbar {
 header .navbar .nav-link {
   color: var(--primary-font-color) !important;
   font-weight: 500;
+  padding-top: 5px !important;
 }
 header .navbar {
   color: var(--primary-font-color) !important;
@@ -95,7 +127,199 @@ header .navbar {
 header .navbar-toggler {
   border: 1px solid #c7c6c6 !important;
 }
-
 .navbar-toggler i {
   color: #b0b0b0 !important;
+}
+header button.btn-primary {
+  font-size: 17px !important;
+}
+
+/* HOME */
+.home {
+  background: linear-gradient(to top, #2f9445d3 0%, #ffffff 35%);
+  padding-top: 150px !important ;
+  padding-bottom: 150px !important ;
+}
+.home h1 {
+  font-family: "Fleur De Leah", cursive;
+  color: var(--primary-color);
+  font-size: 65px;
+  text-shadow: 3px 7px 5px rgba(0, 0, 0, 0.2);
+}
+.home p {
+  max-width: 720px;
+  margin: 0 auto;
+  color: var(--primary-font-color);
+}
+.home img {
+  max-width: 190px;
+  height: auto;
+}
+@media (max-width: 991.98px) {
+  .home {
+    background: linear-gradient(to top, #2f9445d3 0%, #ffffff 35%);
+    padding-top: 100px !important ;
+    padding-bottom: 0px !important ;
+  }
+  .home h1 {
+    font-size: 40px;
+  }
+  .home img {
+    max-width: 130px;
+    height: auto;
+  }
+  .home p {
+    max-width: 720px;
+    margin: 0 50px;
+  }
+}
+
+/* INFO */
+.info {
+  padding-top: 100px !important;
+}
+
+.info h2 {
+  font-family: "Carattere", cursive;
+  color: var(--primary-color);
+  font-size: 40px;
+  text-shadow: 3px 7px 5px rgba(0, 0, 0, 0.2);
+}
+.info h5 {
+  font-weight: 700;
+}
+@media (max-width: 991.98px) {
+  .info {
+    padding-top: 20px !important ;
+  }
+}
+
+/* SERVIS */
+.servis {
+  padding-top: 50px !important;
+  padding-bottom: 80px !important;
+}
+.servis .service-item {
+  position: relative;
+  margin-top: 2.5rem;
+  overflow: hidden;
+}
+.servis .service-item .service-img {
+  position: relative;
+  display: inline-block;
+  padding: 40px;
+  width: 100%;
+}
+.servis .service-item.service-item-left {
+  border-radius: 500px 0 0 500px;
+  background: linear-gradient(to right, #94dfa4, #fff);
+}
+.servis .service-item.service-item-right {
+  border-radius: 0 500px 500px 0;
+  background: linear-gradient(to left, #94dfa4, #fff);
+}
+.servis p {
+  max-width: 70%;
+  border-bottom: 2px solid var(--primary-color);
+}
+@media (max-width: 767.98px) {
+  .servis .service-item.service-item-left,
+  .servis .service-item.service-item-right {
+    border-radius: 500px 500px 0 0;
+    background: linear-gradient(to bottom, #94dfa4, #fff);
+    text-align: center;
+  }
+  .servis p {
+    max-width: 100%;
+  }
+  .servis .service-item .service-img {
+    width: 90%;
+  }
+  .servis {
+    padding-bottom: 50px !important;
+  }
+}
+
+/* PRODUK */
+.produk {
+  padding-top: 50px !important;
+  padding-bottom: 80px !important;
+}
+.produk h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.produk p {
+  color: var(--secondary-font-color);
+}
+.produk .card {
+  border-radius: 15px !important;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.1) !important;
+}
+@media (max-width: 767.98px) {
+  .produk {
+    padding-bottom: 30px !important;
+  }
+}
+
+/* REVIEW */
+.review {
+  background-color: #186929;
+}
+.review h4 {
+  font-weight: 600 !important;
+  color: white;
+}
+.review p {
+  font-style: italic !important;
+  max-width: 800px;
+  margin: auto;
+  color: white;
+}
+.review .stars {
+  color: #ff7700;
+  font-size: 15px;
+}
+.swiper {
+  --swiper-pagination-color: #b7b7b7;
+  --swiper-pagination-bullet-inactive-color: #767676;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-horizontal-gap: 3px;
+}
+
+/* CONTACT */
+.contact button {
+  min-width: 200px;
+}
+.contact img {
+  max-width: 120px;
+  height: auto;
+  margin-right: 20px;
+}
+.contact span {
+  font-family: "Fleur De Leah", cursive;
+  color: var(--primary-color);
+  font-size: 44px;
+  text-shadow: 3px 7px 5px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 767.98px) {
+  .contact span,
+  .contact img {
+    display: none;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: #000000;
+  color: var(--secondary-font-color);
+}
+footer p {
+  color: white;
+  font-size: 16px;
+}
+footer span {
+  color: var(--secondary-font-color);
+  font-size: 14px;
 }

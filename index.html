@@ -11,11 +11,19 @@
     <meta property="image" content="https://i.postimg.cc/kX0ThBm3/meta.png" />
     <meta name="keywords" content="" />
 
-    <title>Daus Bateri Melaka</title>
+    <title>Jamu Puteri Saadong</title>
     <link href="public/img/favicon.png" rel="icon" />
 
     <link
-      href="https://fonts.googleapis.com/css?family=Afacad"
+      href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fleur De Leah"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Carattere"
       rel="stylesheet"
     />
 
@@ -33,6 +41,12 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header id="header" class="header fixed-top">
@@ -53,13 +67,18 @@
           <div class="collapse navbar-collapse" id="mainNavbar">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-2 mt-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#info">Info</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#servis">Servis</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#produk">Produk</a>
+              </li>
+              <li class="nav-item d-none d-lg-block">
+                <a href="#contact" class="btn btn-primary px-3 ms-3"
+                  >Hubungi Kami</a
+                >
               </li>
             </ul>
           </div>
@@ -67,21 +86,386 @@
       </nav>
     </header>
 
-    <section class="home container mt-5">
-      <div
-        class="d-flex justify-content-center align-items-center"
-        style="height: 300vh"
-      >
-        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-          I am perfectly centered!
+    <!-- HOME -->
+    <section class="home container-fluid min-vh-100">
+      <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+        <div class="text-center">
+          <img
+            src="../public/img/na_aina.png"
+            alt="Daus Bateri Melaka"
+            class="img-fluid mb-4 mb-md-5"
+          />
+          <h1 class="mb-4 mb-md-5">Jamu Puteri Saadong</h1>
+          <p class="mx-auto text-center mb-4 px-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing exercitation
+            elit, sed do eiusmod tempor incididunt ut tempor labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris
+            nis.
+          </p>
+          <a href="#info" class="btn btn-primary px-3 ms-3 fw-bold px-5"
+            >Info</a
+          >
         </div>
       </div>
     </section>
 
+    <!-- INFO -->
+    <section class="info container" id="info">
+      <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+        <div class="row pb-5">
+          <div class="col-md-6 p-4 py-4 pe-md-5">
+            <h2 class="mb-4">Info Kami -</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nis.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nis.
+            </p>
+            <h5 class="text-end">- CIK NA -</h5>
+          </div>
+          <div class="col-md-6">
+            <div class="ratio ratio-16x9">
+              <video
+                width="640"
+                height="360"
+                controls
+                poster="public/img/vid-thumb.png"
+              >
+                <source src="public/video/DBM.MP4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="m-0" />
+
+    <!-- SERVIS -->
+    <section class="servis container px-md-5" id="servis">
+      <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+        <div class="text-center mb-5 section-title">
+          <h1 class="mb-3 text-center">- Servis Kami -</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut.
+          </p>
+        </div>
+
+        <div class="service-item service-item-left">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-3">
+              <div class="service-img wow fadeInRight" data-wow-delay="0.2s">
+                <img
+                  class="img-fluid rounded-circle"
+                  src="public/img/testImg.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div
+                class="service-text px-5 px-md-0 py-md-5 ps-md-4 wow fadeInRight"
+                data-wow-delay="0.5s"
+              >
+                <h3 class="text-uppercase mb-4 fw-bold">URUTAN TRADISIONAL</h3>
+                <p class="w-100 mb-5 mb-lg-2 ms-0 pb-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service-item service-item-right">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-3 order-md-1 text-md-end">
+              <div class="service-img wow fadeInRight" data-wow-delay="0.2s">
+                <img
+                  class="img-fluid rounded-circle"
+                  src="public/img/testImg.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div
+                class="service-text px-5 px-md-0 py-md-5 pe-md-4 text-md-end wow fadeInRight"
+                data-wow-delay="0.5s"
+              >
+                <h3 class="text-uppercase mb-4 fw-bold">
+                  PROSES DAN JUALAN JAMU
+                </h3>
+                <p class="w-100 mb-5 mb-lg-2 ms-auto me-0 pb-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service-item service-item-left">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-3">
+              <div class="service-img wow fadeInRight" data-wow-delay="0.2s">
+                <img
+                  class="img-fluid rounded-circle"
+                  src="public/img/testImg.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div
+                class="service-text px-5 px-md-0 py-md-5 ps-md-4 wow fadeInRight"
+                data-wow-delay="0.5s"
+              >
+                <h3 class="text-uppercase mb-4 fw-bold">
+                  KONSULTASI KESIHATAN DALAMAN
+                </h3>
+                <p class="w-100 mb-5 mb-lg-2 ms-0 pb-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="m-0" />
+
+    <!-- PRODUK -->
+    <section class="produk container px-md-5 py-md-5" id="produk">
+      <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+        <div class="text-center mb-5 section-title">
+          <h1 class="mb-3 text-center">- Produk Kami -</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4 px-md-4">
+            <div class="card h-100 shadow-sm text-center overflow-hidden">
+              <img
+                src="public/img/testImg.png"
+                class="card-img-top"
+                alt="Produk 1"
+              />
+              <div class="card-body">
+                <h4 class="card-title pt-3 pb-2">
+                  Jamu Bunga Ratu Pari<br />
+                  dan Kacip Fatimah
+                </h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut.
+                </p>
+                <button class="btn btn-primary mt-2 px-5 fw-bold">Info</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 px-md-4">
+            <div class="card h-100 shadow-sm text-center overflow-hidden">
+              <img
+                src="public/img/testImg.png"
+                class="card-img-top"
+                alt="Produk 1"
+              />
+              <div class="card-body">
+                <h4 class="card-title pt-3 pb-2">
+                  Jamu Tongkat Ali dan <br />Ubi Jaga
+                </h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut.
+                </p>
+                <button class="btn btn-primary mt-2 px-5 fw-bold">Info</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 px-md-4">
+            <div class="card h-100 shadow-sm text-center overflow-hidden">
+              <img
+                src="public/img/testImg.png"
+                class="card-img-top"
+                alt="Produk 1"
+              />
+              <div class="card-body">
+                <h4 class="card-title pt-3 pb-2">
+                  Jamu Cengkih dan Kulit<br />
+                  Kayu Manis
+                </h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut.
+                </p>
+                <button class="btn btn-primary mt-2 px-5 fw-bold">Info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEW -->
+    <section class="review container-fluid pt-5 pb-4 pt-md-5 pb-md-4">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper mb-5">
+            <div class="swiper-slide">
+              <div class="testimonial-item text-center">
+                <h4>ANIS SAKIRA</h4>
+                <div
+                  class="stars d-flex gap-1 m-auto justify-content-center mb-3"
+                >
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span
+                    >Enim nisi quem export duis labore cillum quae magna enim
+                    sint quorum nulla quem veniam duis minim tempor labore quem
+                    eram duis noster aute amet eram fore quis sint minim.</span
+                  >
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item text-center">
+                <h4>ANIS SAKIRA</h4>
+                <div
+                  class="stars d-flex gap-1 m-auto justify-content-center mb-3"
+                >
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span
+                    >Enim nisi quem export duis labore cillum quae magna enim
+                    sint quorum nulla quem veniam duis minim tempor labore quem
+                    eram duis noster aute amet eram fore quis sint minim.</span
+                  >
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item text-center">
+                <h4>ANIS SAKIRA</h4>
+                <div
+                  class="stars d-flex gap-1 m-auto justify-content-center mb-3"
+                >
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span
+                    >Enim nisi quem export duis labore cillum quae magna enim
+                    sint quorum nulla quem veniam duis minim tempor labore quem
+                    eram duis noster aute amet eram fore quis sint minim.</span
+                  >
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact container px-4 px-md-5 py-5" id="contact">
+      <div class="row">
+        <div class="col-md-6 section-title text-start">
+          <h1 class="mb-4">Hubungi Kami -</h1>
+          <p class="m-0 mb-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut.
+          </p>
+          <div class="d-grid gap-2 d-md-block">
+            <button
+              class="btn btn-primary mt-4 px-5 fw-bold"
+              onclick="whatsappMe()"
+            >
+              Whatsapp
+            </button>
+            <button
+              class="btn btn-primary mt-0 mt-md-4 px-5 mx-0 mx-md-3 fw-bold"
+              onclick="
+                window.open(
+                  'https://www.tiktok.com/@mokjamuputerisaadong?_r=1&_t=ZS-95qlxs9ZYhc',
+                  '_blank',
+                )
+              "
+            >
+              TikTok
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6 text-center mt-2">
+          <img
+            src="../public/img/na_aina.png"
+            alt="Daus Bateri Melaka"
+            class="img-fluid mb-0 mb-md-0"
+          />
+          <span class="mb-4 mb-md-5">Jamu Puteri Saadong</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer container-fluid text-center py-3">
+      <p class="m-0">&copy; 2024 Jamu Puteri Saadong. All rights reserved.</p>
+      <span class="d-block">Developed By : Taming Sari Development</span>
+    </footer>
+
     <span
       id="floating-btn"
       class="floating-btn d-flex align-items-center justify-content-center"
-      onclick=""
+      onclick="whatsappMe()"
       ><i class="bi bi-whatsapp"></i
     ></span>
 
@@ -89,6 +473,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

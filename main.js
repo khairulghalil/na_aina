@@ -57,3 +57,7 @@ function whatsappMe() {
   window.location.href =
     "https://wa.me/60179062684?text=Assalamualaikum+Cik+Na+";
 }
+
+if (history.scrollRestoration) {
+  history.scrollRestoration = "manual";
+}

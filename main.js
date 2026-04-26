@@ -61,3 +61,14 @@ function whatsappMe() {
 if (history.scrollRestoration) {
   history.scrollRestoration = "manual";
 }
+
+window.addEventListener("load", () => {
+  if (window.location.hash) {
+    history.replaceState(
+      "",
+      document.title,
+      window.location.pathname + window.location.search,
+    );
+  }
+  window.scrollTo(0, 0);
+});

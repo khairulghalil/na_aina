@@ -30,6 +30,7 @@ body {
   border: none;
   font-family: "Afacad", sans-serif;
   font-size: 18px !important;
+  cursor: default !important;
 }
 .btn-primary:focus,
 .btn-primary:active:focus {
@@ -43,6 +44,18 @@ body {
   ) !important;
   color: white;
 }
+.btn-gradient {
+  background: linear-gradient(45deg, #94dfa4, #186929) !important;
+}
+.btn-gradient:hover {
+  background: linear-gradient(
+    45deg,
+    color-mix(in srgb, #94dfa4, transparent 20%),
+    color-mix(in srgb, #186929, transparent 20%)
+  ) !important;
+  color: white;
+}
+
 hr {
   border: 0.5px solid var(--primary-color);
 }
@@ -183,7 +196,7 @@ header button.btn-primary {
 } */
 
 .home {
-  background-image: url("./public/img/background.png");
+  background-image: url("./public/img/bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -210,11 +223,11 @@ header button.btn-primary {
     /* background: linear-gradient(to top, #2f9445d3 0%, #ffffff 35%); */
     background-image:
       linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-      url("./public/img/background.png");
+      url("./public/img/bg.png");
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 100px !important ;
+    padding-top: 130px !important ;
     padding-bottom: 100px !important ;
   }
   .home h1 {

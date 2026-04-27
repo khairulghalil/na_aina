@@ -73,7 +73,7 @@ const modalData = [
     <hr />
     <b>Masalah Keputihan</b><br />
     - Sesuai untuk keputihan yang berlebihan, gatal-gatal pada bahagian intim, dan bau yang tidak enak.<br />
-    - Menjaga kebersihan dalaman dan mengeringkan kawasan intim secara sihat<br />
+    - Menjaga kebersihan dalaman dan mengeringkan kawasan intim secara sihat.<br />
     <hr />
     <b>Kelesuan & Sakit Sendi</b><br />
     - Sesuai untuk badan yang sering terasa "berangin", cepat penat, dan sakit-sakit sendi.<br />
@@ -83,7 +83,7 @@ const modalData = [
   {
     title: "Jamu Tongkat Ali dan Ubi Jaga",
     url: "../public/img/testImg.png",
-    description: `Gabungan Tongkat Ali dan Ubi Jaga adalah berfungsi untuk meningkatkan kesihatan, stamina dan menguatkan tenaga batin lelaki`,
+    description: `Gabungan Tongkat Ali dan Ubi Jaga adalah berfungsi untuk meningkatkan kesihatan, stamina dan menguatkan tenaga batin lelaki.`,
     details: `<b>Meningkatkan Tenaga Batin</b><br />
     - Sesuai untuk masalah tenaga batin, kurang keinginan (libido), atau masalah prestasi.<br />
     - Tongkat Ali membantu meningkatkan hormon testosteron secara semula jadi, manakala Ubi Jaga membantu melancarkan pengaliran darah ke bahagian organ intim.<br />
@@ -106,11 +106,11 @@ const modalData = [
     url: "../public/img/testImg.png",
     description: `Gabungan Cengkih dan Kulit Kayu Manis berfungsi untuk menguatkan sistem imun (anti-radang), membuang toksin dan meningkatkan kesihatan pencernaan.`,
     details: `<b>Masalah Pencernaan & Angin Dalam Badan</b><br />
-    - Sesuai untuk perut kembung, kerap sendawa, dan masalah penghadaman<br />
+    - Sesuai untuk perut kembung, kerap sendawa, dan masalah penghadaman.<br />
     - Cengkih dan kayu manis membantu merangsang enzim pencernaan dan mempercepatkan proses pengeluaran angin dari saluran usus.<br />
     <hr />
     <b>Mengawal Gula Dalam Darah & Kolesterol</b><br />
-    - Sesuai untuk: Mereka yang ingin menjaga paras gula dan membantu menurunkan kolesterol.<br />
+    - Sesuai untuk mereka yang ingin menjaga paras gula dan membantu menurunkan kolesterol.<br />
     - Membantu metabolisme glukosa dengan lebih berkesan.<br />
     <hr />
     <b>Kesihatan Mulut & Pernafasan (Resdung)</b><br />

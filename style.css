@@ -257,6 +257,7 @@ header button.btn-primary {
 .produk h4 {
   font-size: 24px;
   font-weight: 500;
+  color: #186929 !important;
 }
 .produk p {
   color: var(--secondary-font-color);

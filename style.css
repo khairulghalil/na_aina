@@ -207,15 +207,15 @@ header button.btn-primary {
 }
 @media (max-width: 991.98px) {
   .home {
-    background: linear-gradient(to top, #2f9445d3 0%, #ffffff 35%);
-    /* background-image:
-      linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-      url("./public/img/background.png"); */
+    /* background: linear-gradient(to top, #2f9445d3 0%, #ffffff 35%); */
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+      url("./public/img/background.png");
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 0px !important ;
-    padding-bottom: 0px !important ;
+    padding-top: 100px !important ;
+    padding-bottom: 100px !important ;
   }
   .home h1 {
     font-size: 40px;

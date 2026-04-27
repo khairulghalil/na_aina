@@ -54,7 +54,7 @@ window.addEventListener("load", initSwiper);
 // Whatsapp Me function
 function whatsappMe() {
   window.location.href =
-    "https://wa.me/60179062684?text=Assalamualaikum+Cik+Na+";
+    "https://wa.me/60179062684?text=Assalamualaikum+Cik+Na+🤗";
 }
 
 // Modal Product

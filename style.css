@@ -347,4 +347,18 @@ footer span {
 }
 .modal h3 {
   color: var(--primary-color) !important;
+  font-size: 25px !important;
+  font-weight: 600 !important;
+  margin: 10px 0px;
+}
+.modal h4 {
+  font-size: 22px !important;
+  margin-top: 30px;
+}
+.modal span {
+  color: var(--secondary-font-color) !important;
+}
+.modal hr {
+  border: 0px solid black;
+  margin: 7px;
 }

@@ -207,9 +207,10 @@ header button.btn-primary {
 }
 @media (max-width: 991.98px) {
   .home {
-    background-image:
+    background: linear-gradient(to top, #2f9445d3 0%, #ffffff 35%);
+    /* background-image:
       linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-      url("./public/img/background.png");
+      url("./public/img/background.png"); */
     display: flex;
     align-items: center;
     justify-content: center;

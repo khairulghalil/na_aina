@@ -111,7 +111,7 @@ const modalData = [
     <hr />
     <b>Mengawal Gula Dalam Darah & Kolesterol</b><br />
     - Sesuai untuk mereka yang ingin menjaga paras gula dan membantu menurunkan kolesterol.<br />
-    - Membantu metabolisme glukosa dengan lebih berkesan.<br />
+    - Menstabilkan metabolisme glukosa dengan lebih berkesan.<br />
     <hr />
     <b>Kesihatan Mulut & Pernafasan (Resdung)</b><br />
     - Sesuai untuk masalah resdung, sakit tekak, batuk berpanjangan, dan masalah bau mulut.<br />

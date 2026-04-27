@@ -320,6 +320,9 @@ header button.btn-primary {
   .contact img {
     display: none;
   }
+  .contact p {
+    min-width: 20px;
+  }
 }
 
 /* FOOTER */
